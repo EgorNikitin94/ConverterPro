@@ -7,18 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		503F854527CA7CA1005927C6 /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F854427CA7CA1005927C6 /* KeyboardButton.swift */; };
+		5044511727C63D4800B502D5 /* AdaptiveForgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044511627C63D4800B502D5 /* AdaptiveForgroundColor.swift */; };
+		5044511927C6411900B502D5 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044511827C6411900B502D5 /* AppColors.swift */; };
+		5044511B27C643DF00B502D5 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044511A27C643DF00B502D5 /* BackgroundView.swift */; };
+		5044511D27C6553A00B502D5 /* NumeralSystemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044511C27C6553A00B502D5 /* NumeralSystemViewModel.swift */; };
+		5044511F27C655BE00B502D5 /* NumberInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044511E27C655BE00B502D5 /* NumberInputViewModel.swift */; };
+		5044512127C655F100B502D5 /* KeyboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044512027C655F100B502D5 /* KeyboardViewModel.swift */; };
 		5055864D27BAF05A00457068 /* ConverterProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5055864C27BAF05A00457068 /* ConverterProApp.swift */; };
-		5055864F27BAF05A00457068 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5055864E27BAF05A00457068 /* ContentView.swift */; };
+		5055864F27BAF05A00457068 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5055864E27BAF05A00457068 /* RootView.swift */; };
 		5055865127BAF05B00457068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5055865027BAF05B00457068 /* Assets.xcassets */; };
 		5055865427BAF05B00457068 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5055865327BAF05B00457068 /* Preview Assets.xcassets */; };
+		5067E5FA27DE8C4F00FA12E0 /* KeyboardLayoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5067E5F927DE8C4F00FA12E0 /* KeyboardLayoutModel.swift */; };
+		50C6418227C59BEC0041FB59 /* NumeralSystemsConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C6418127C59BEC0041FB59 /* NumeralSystemsConverterView.swift */; };
+		50C6418427C59D200041FB59 /* ConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C6418327C59D200041FB59 /* ConverterView.swift */; };
+		50C6418627C59E950041FB59 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C6418527C59E950041FB59 /* CalculatorView.swift */; };
+		50C6418827C5A4540041FB59 /* NumberInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C6418727C5A4540041FB59 /* NumberInputView.swift */; };
+		50C6418D27C5A8DF0041FB59 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C6418C27C5A8DF0041FB59 /* KeyboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		503F854427CA7CA1005927C6 /* KeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
+		5044511627C63D4800B502D5 /* AdaptiveForgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveForgroundColor.swift; sourceTree = "<group>"; };
+		5044511827C6411900B502D5 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		5044511A27C643DF00B502D5 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		5044511C27C6553A00B502D5 /* NumeralSystemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumeralSystemViewModel.swift; sourceTree = "<group>"; };
+		5044511E27C655BE00B502D5 /* NumberInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberInputViewModel.swift; sourceTree = "<group>"; };
+		5044512027C655F100B502D5 /* KeyboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewModel.swift; sourceTree = "<group>"; };
 		5055864927BAF05A00457068 /* ConverterPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConverterPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5055864C27BAF05A00457068 /* ConverterProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterProApp.swift; sourceTree = "<group>"; };
-		5055864E27BAF05A00457068 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5055864E27BAF05A00457068 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		5055865027BAF05B00457068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5055865327BAF05B00457068 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5067E5F927DE8C4F00FA12E0 /* KeyboardLayoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutModel.swift; sourceTree = "<group>"; };
+		50C6418127C59BEC0041FB59 /* NumeralSystemsConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumeralSystemsConverterView.swift; sourceTree = "<group>"; };
+		50C6418327C59D200041FB59 /* ConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterView.swift; sourceTree = "<group>"; };
+		50C6418527C59E950041FB59 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		50C6418727C5A4540041FB59 /* NumberInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberInputView.swift; sourceTree = "<group>"; };
+		50C6418C27C5A8DF0041FB59 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +58,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		503F854227CA659A005927C6 /* NumderInpuView */ = {
+			isa = PBXGroup;
+			children = (
+				50C6418727C5A4540041FB59 /* NumberInputView.swift */,
+				5044511E27C655BE00B502D5 /* NumberInputViewModel.swift */,
+			);
+			path = NumderInpuView;
+			sourceTree = "<group>";
+		};
+		503F854327CA65AE005927C6 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				50C6418C27C5A8DF0041FB59 /* KeyboardView.swift */,
+				5044512027C655F100B502D5 /* KeyboardViewModel.swift */,
+				503F854427CA7CA1005927C6 /* KeyboardButton.swift */,
+				5067E5F927DE8C4F00FA12E0 /* KeyboardLayoutModel.swift */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		5044511427C63CB100B502D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5044511827C6411900B502D5 /* AppColors.swift */,
+				5055865027BAF05B00457068 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5044511527C63D2000B502D5 /* Helpers & Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5044511627C63D4800B502D5 /* AdaptiveForgroundColor.swift */,
+			);
+			path = "Helpers & Extensions";
+			sourceTree = "<group>";
+		};
 		5055864027BAF05A00457068 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +114,11 @@
 		5055864B27BAF05A00457068 /* ConverterPro */ = {
 			isa = PBXGroup;
 			children = (
-				5055864C27BAF05A00457068 /* ConverterProApp.swift */,
-				5055864E27BAF05A00457068 /* ContentView.swift */,
-				5055865027BAF05B00457068 /* Assets.xcassets */,
+				50C6418A27C5A4800041FB59 /* Root module */,
+				50C6418927C5A45E0041FB59 /* Numeral system module */,
+				50C6418B27C5A4960041FB59 /* Other in progress */,
+				5044511527C63D2000B502D5 /* Helpers & Extensions */,
+				5044511427C63CB100B502D5 /* Resources */,
 				5055865227BAF05B00457068 /* Preview Content */,
 			);
 			path = ConverterPro;
@@ -65,6 +130,36 @@
 				5055865327BAF05B00457068 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		50C6418927C5A45E0041FB59 /* Numeral system module */ = {
+			isa = PBXGroup;
+			children = (
+				50C6418127C59BEC0041FB59 /* NumeralSystemsConverterView.swift */,
+				5044511C27C6553A00B502D5 /* NumeralSystemViewModel.swift */,
+				503F854227CA659A005927C6 /* NumderInpuView */,
+				503F854327CA65AE005927C6 /* Keyboard */,
+			);
+			path = "Numeral system module";
+			sourceTree = "<group>";
+		};
+		50C6418A27C5A4800041FB59 /* Root module */ = {
+			isa = PBXGroup;
+			children = (
+				5055864C27BAF05A00457068 /* ConverterProApp.swift */,
+				5055864E27BAF05A00457068 /* RootView.swift */,
+				5044511A27C643DF00B502D5 /* BackgroundView.swift */,
+			);
+			path = "Root module";
+			sourceTree = "<group>";
+		};
+		50C6418B27C5A4960041FB59 /* Other in progress */ = {
+			isa = PBXGroup;
+			children = (
+				50C6418327C59D200041FB59 /* ConverterView.swift */,
+				50C6418527C59E950041FB59 /* CalculatorView.swift */,
+			);
+			path = "Other in progress";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +232,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5055864F27BAF05A00457068 /* ContentView.swift in Sources */,
+				5044511B27C643DF00B502D5 /* BackgroundView.swift in Sources */,
+				5067E5FA27DE8C4F00FA12E0 /* KeyboardLayoutModel.swift in Sources */,
+				5044511927C6411900B502D5 /* AppColors.swift in Sources */,
+				503F854527CA7CA1005927C6 /* KeyboardButton.swift in Sources */,
+				5055864F27BAF05A00457068 /* RootView.swift in Sources */,
+				50C6418627C59E950041FB59 /* CalculatorView.swift in Sources */,
+				5044511727C63D4800B502D5 /* AdaptiveForgroundColor.swift in Sources */,
+				50C6418D27C5A8DF0041FB59 /* KeyboardView.swift in Sources */,
+				50C6418427C59D200041FB59 /* ConverterView.swift in Sources */,
 				5055864D27BAF05A00457068 /* ConverterProApp.swift in Sources */,
+				5044512127C655F100B502D5 /* KeyboardViewModel.swift in Sources */,
+				50C6418827C5A4540041FB59 /* NumberInputView.swift in Sources */,
+				5044511D27C6553A00B502D5 /* NumeralSystemViewModel.swift in Sources */,
+				5044511F27C655BE00B502D5 /* NumberInputViewModel.swift in Sources */,
+				50C6418227C59BEC0041FB59 /* NumeralSystemsConverterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +304,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -277,6 +385,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +415,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
