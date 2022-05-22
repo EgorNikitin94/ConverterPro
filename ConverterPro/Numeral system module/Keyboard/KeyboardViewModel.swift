@@ -8,13 +8,6 @@
 import Combine
 import Foundation
 
-enum ButtonAction {
-  case appendNumber
-  case clearNumber
-  case clearAllNumbers
-  case addPoint
-}
-
 class KeyboardViewModel: ObservableObject {
   
   @Published var type: NumSystemType
@@ -23,7 +16,7 @@ class KeyboardViewModel: ObservableObject {
   
   init(type: NumSystemType) {
     self.type = type
-    self.layoutModel = KeyboardLayoutModel(with: type)
+    self.layoutModel = KeybouardBuildersDirector().buildKeyboard(for: type)
   }
   
 }

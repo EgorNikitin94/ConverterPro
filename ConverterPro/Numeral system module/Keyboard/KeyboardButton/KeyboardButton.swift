@@ -10,21 +10,20 @@ import AVFoundation
 
 struct KeyboardButton: View {
   
-  let symbol: String
+  let glyph: Glyph
   
-  var imageName: String?
+  let tappedAction: ButtonAction
+  
+  let sizeFactor: ButtonSizeFactor
   
   private let cornerRadius: Double = 10.0
   
   @GestureState private var isTapped = false
   
-  init (symbol: String) {
-    self.symbol = symbol
-  }
-  
-  init(imageName: String) {
-    self.imageName = imageName
-    self.symbol = ""
+  init(viewModel: KeyboardButtonViewModel) {
+    self.glyph = viewModel.gliph
+    self.tappedAction = viewModel.action
+    self.sizeFactor = viewModel.sizeFactor
   }
   
   var body: some View {
@@ -34,20 +33,21 @@ struct KeyboardButton: View {
         AudioServicesPlaySystemSound(1104)
       }
       .onEnded { _ in
-        print(symbol)
+        print(glyph.symbol)
       }
     ZStack {
       RoundedRectangle(cornerRadius: cornerRadius)
         .foregroundColor(color: isTapped ? AppColors.selected : AppColors.numInput)
         .scaleEffect(isTapped ? 1.05 : 1.0)
-      if (imageName != nil) {
-        Image(systemName: imageName!)
+      if (glyph.isImage) {
+        Image(systemName: glyph.symbol)
           .font(.title)
-          .foregroundColor(.primary)
+          .foregroundColor(Color(uiColor: glyph.color))
       } else {
-        Text(symbol)
+        Text(glyph.symbol)
           .font(.largeTitle)
           .fontWeight(.medium)
+          .foregroundColor(Color(uiColor: glyph.color))
       }
     }
     .animation(.easeIn(duration: 0.1), value: isTapped)
@@ -58,10 +58,12 @@ struct KeyboardButton: View {
 struct KeyBoardButton_Previews: PreviewProvider {
   static var previews: some View {
     Group {
-      KeyboardButton(symbol: "9")
+      KeyboardButton(viewModel:
+                      KeyboardButtonViewModel(id: 1, gliph: Glyph(symbol: "9", isImage: false, color: .black), action: .appendSymbol, sizeFactor: .factor(1)))
         .previewLayout(.sizeThatFits)
         .frame(width: 60, height: 60)
-      KeyboardButton(symbol: "9")
+      KeyboardButton(viewModel:
+                      KeyboardButtonViewModel(id: 1, gliph: Glyph(symbol: "9", isImage: false, color: .white), action: .appendSymbol, sizeFactor: .factor(1)))
         .preferredColorScheme(.dark)
         .previewLayout(.sizeThatFits)
         .frame(width: 60, height: 60)

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50021E7228316630007139BE /* KeyboardButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50021E7128316630007139BE /* KeyboardButtonViewModel.swift */; };
+		500B611F283A510B003F92EC /* KeyboardRowLayoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B611E283A510B003F92EC /* KeyboardRowLayoutModel.swift */; };
+		500B6122283A5216003F92EC /* Glyph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B6121283A5216003F92EC /* Glyph.swift */; };
+		500B6124283A52C6003F92EC /* KeyboardBuilderProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B6123283A52C6003F92EC /* KeyboardBuilderProtocols.swift */; };
+		500B6126283A52F8003F92EC /* KeyboardBuilders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B6125283A52F8003F92EC /* KeyboardBuilders.swift */; };
+		500B6128283A53AF003F92EC /* KeyboardBuildDirector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B6127283A53AF003F92EC /* KeyboardBuildDirector.swift */; };
 		503F854527CA7CA1005927C6 /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503F854427CA7CA1005927C6 /* KeyboardButton.swift */; };
 		5044511727C63D4800B502D5 /* AdaptiveForgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044511627C63D4800B502D5 /* AdaptiveForgroundColor.swift */; };
 		5044511927C6411900B502D5 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044511827C6411900B502D5 /* AppColors.swift */; };
@@ -27,6 +33,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50021E7128316630007139BE /* KeyboardButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButtonViewModel.swift; sourceTree = "<group>"; };
+		500B611E283A510B003F92EC /* KeyboardRowLayoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardRowLayoutModel.swift; sourceTree = "<group>"; };
+		500B6121283A5216003F92EC /* Glyph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glyph.swift; sourceTree = "<group>"; };
+		500B6123283A52C6003F92EC /* KeyboardBuilderProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardBuilderProtocols.swift; sourceTree = "<group>"; };
+		500B6125283A52F8003F92EC /* KeyboardBuilders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardBuilders.swift; sourceTree = "<group>"; };
+		500B6127283A53AF003F92EC /* KeyboardBuildDirector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardBuildDirector.swift; sourceTree = "<group>"; };
 		503F854427CA7CA1005927C6 /* KeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
 		5044511627C63D4800B502D5 /* AdaptiveForgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveForgroundColor.swift; sourceTree = "<group>"; };
 		5044511827C6411900B502D5 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
@@ -58,22 +70,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		503F854227CA659A005927C6 /* NumderInpuView */ = {
+		500B611B283A4E4A003F92EC /* KeyboardButton */ = {
+			isa = PBXGroup;
+			children = (
+				500B6121283A5216003F92EC /* Glyph.swift */,
+				503F854427CA7CA1005927C6 /* KeyboardButton.swift */,
+				50021E7128316630007139BE /* KeyboardButtonViewModel.swift */,
+			);
+			path = KeyboardButton;
+			sourceTree = "<group>";
+		};
+		500B611C283A4E8B003F92EC /* KeyboardLayout */ = {
+			isa = PBXGroup;
+			children = (
+				500B6120283A51CF003F92EC /* Builder */,
+				500B611D283A50E2003F92EC /* KeyboardRowLayoutModel */,
+				5067E5F927DE8C4F00FA12E0 /* KeyboardLayoutModel.swift */,
+			);
+			path = KeyboardLayout;
+			sourceTree = "<group>";
+		};
+		500B611D283A50E2003F92EC /* KeyboardRowLayoutModel */ = {
+			isa = PBXGroup;
+			children = (
+				500B611E283A510B003F92EC /* KeyboardRowLayoutModel.swift */,
+			);
+			path = KeyboardRowLayoutModel;
+			sourceTree = "<group>";
+		};
+		500B6120283A51CF003F92EC /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				500B6123283A52C6003F92EC /* KeyboardBuilderProtocols.swift */,
+				500B6125283A52F8003F92EC /* KeyboardBuilders.swift */,
+				500B6127283A53AF003F92EC /* KeyboardBuildDirector.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		503F854227CA659A005927C6 /* NumderInputView */ = {
 			isa = PBXGroup;
 			children = (
 				50C6418727C5A4540041FB59 /* NumberInputView.swift */,
 				5044511E27C655BE00B502D5 /* NumberInputViewModel.swift */,
 			);
-			path = NumderInpuView;
+			path = NumderInputView;
 			sourceTree = "<group>";
 		};
 		503F854327CA65AE005927C6 /* Keyboard */ = {
 			isa = PBXGroup;
 			children = (
+				500B611C283A4E8B003F92EC /* KeyboardLayout */,
+				500B611B283A4E4A003F92EC /* KeyboardButton */,
 				50C6418C27C5A8DF0041FB59 /* KeyboardView.swift */,
 				5044512027C655F100B502D5 /* KeyboardViewModel.swift */,
-				503F854427CA7CA1005927C6 /* KeyboardButton.swift */,
-				5067E5F927DE8C4F00FA12E0 /* KeyboardLayoutModel.swift */,
 			);
 			path = Keyboard;
 			sourceTree = "<group>";
@@ -137,7 +187,7 @@
 			children = (
 				50C6418127C59BEC0041FB59 /* NumeralSystemsConverterView.swift */,
 				5044511C27C6553A00B502D5 /* NumeralSystemViewModel.swift */,
-				503F854227CA659A005927C6 /* NumderInpuView */,
+				503F854227CA659A005927C6 /* NumderInputView */,
 				503F854327CA65AE005927C6 /* Keyboard */,
 			);
 			path = "Numeral system module";
@@ -233,13 +283,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5044511B27C643DF00B502D5 /* BackgroundView.swift in Sources */,
+				50021E7228316630007139BE /* KeyboardButtonViewModel.swift in Sources */,
 				5067E5FA27DE8C4F00FA12E0 /* KeyboardLayoutModel.swift in Sources */,
 				5044511927C6411900B502D5 /* AppColors.swift in Sources */,
+				500B6122283A5216003F92EC /* Glyph.swift in Sources */,
 				503F854527CA7CA1005927C6 /* KeyboardButton.swift in Sources */,
 				5055864F27BAF05A00457068 /* RootView.swift in Sources */,
+				500B6128283A53AF003F92EC /* KeyboardBuildDirector.swift in Sources */,
 				50C6418627C59E950041FB59 /* CalculatorView.swift in Sources */,
+				500B611F283A510B003F92EC /* KeyboardRowLayoutModel.swift in Sources */,
+				500B6124283A52C6003F92EC /* KeyboardBuilderProtocols.swift in Sources */,
 				5044511727C63D4800B502D5 /* AdaptiveForgroundColor.swift in Sources */,
 				50C6418D27C5A8DF0041FB59 /* KeyboardView.swift in Sources */,
+				500B6126283A52F8003F92EC /* KeyboardBuilders.swift in Sources */,
 				50C6418427C59D200041FB59 /* ConverterView.swift in Sources */,
 				5055864D27BAF05A00457068 /* ConverterProApp.swift in Sources */,
 				5044512127C655F100B502D5 /* KeyboardViewModel.swift in Sources */,
