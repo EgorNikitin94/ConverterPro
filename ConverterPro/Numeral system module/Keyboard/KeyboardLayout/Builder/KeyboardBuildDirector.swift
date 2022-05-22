@@ -7,9 +7,9 @@
 
 import UIKit
 
-class KeybouardBuildersDirector {
+class KeybouardBuildDirector {
   
-  let spacing: CGFloat = 15
+  let spacing: CGFloat
   
   let glyphColor: UIColor = UIColor { traint in
     switch traint.userInterfaceStyle {
@@ -20,6 +20,10 @@ class KeybouardBuildersDirector {
     default:
       return UIColor.black
     }
+  }
+  
+  init (spacing: CGFloat) {
+    self.spacing = spacing
   }
   
   func buildKeyboard(for type: NumSystemType) -> KeyboardLayoutModel {
@@ -110,7 +114,7 @@ class KeybouardBuildersDirector {
       
       builder.appendRowBuilder(KeybourdRowBuilder(spacing: spacing, closure: { rowBuilder in
         rowBuilder.appendGlyph(symbol: ".", isImage: false, color: glyphColor, action: .addPoint, sizeFactor: .factor(1))
-        rowBuilder.appendGlyph(symbol: "C", isImage: false, color: .red, action: .clearAllSymbols, sizeFactor: .factor(1))
+        rowBuilder.appendGlyph(symbol: "C", isImage: false, color: .red, action: .clearAllSymbols, sizeFactor: .factor(2))
       }))
     }
     return keyboardBuilder.buildKeyboard()

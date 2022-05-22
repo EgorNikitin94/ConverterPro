@@ -15,4 +15,10 @@ struct KeyboardLayoutModel {
   
   let rowSpacing: CGFloat
   
+  var maxButtonsInRow: Int {
+    let maxButtons = rows.map { vm -> Int in
+      return vm.buttonsCount
+    }
+    return maxButtons.max() ?? 0
+  }
 }

@@ -20,13 +20,13 @@ class NumeralSystemViewModel: ObservableObject {
   
   @Published var numberInputViewModels: [NumberInputViewModel]
   
-  @Published var keuboardViewModel: KeyboardViewModel
+  @Published var keyboardViewModel: KeyboardViewModel
   
   @Published var characterArray: [Character] = []
   
   init() {
     self.numberInputViewModels = []
-    self.keuboardViewModel = KeyboardViewModel(type: .decimal)
+    self.keyboardViewModel = KeyboardViewModel(type: .decimal)
     setUpNumberInputViewModels()
   }
   
@@ -34,7 +34,7 @@ class NumeralSystemViewModel: ObservableObject {
     numberInputViewModels.forEach { numberInputViewModel in
       numberInputViewModel.isSelected = numberInputViewModel.id == index ? true : false
     }
-    keuboardViewModel.type = NumSystemType.init(rawValue: index)!
+    keyboardViewModel.type = NumSystemType.init(rawValue: index)!
   }
   
   private func setUpNumberInputViewModels() {

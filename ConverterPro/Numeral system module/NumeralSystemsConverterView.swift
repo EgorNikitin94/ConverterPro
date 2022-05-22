@@ -26,7 +26,7 @@ struct NumeralSystemsConverterView: View {
               }
           }
         }
-        KeyboardView(viewModel: viewModel.keuboardViewModel)
+        KeyboardView(viewModel: viewModel.keyboardViewModel)
       }
       .padding(15)
     }

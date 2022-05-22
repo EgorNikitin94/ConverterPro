@@ -6,7 +6,7 @@
 //
 
 import Combine
-import Foundation
+import UIKit
 
 class KeyboardViewModel: ObservableObject {
   
@@ -14,9 +14,14 @@ class KeyboardViewModel: ObservableObject {
   
   @Published var layoutModel: KeyboardLayoutModel
   
+  // storage
+  private(set) var cancellableSet: Set<AnyCancellable> = []
+  
+  private let spacing: CGFloat = 15.0
+  
   init(type: NumSystemType) {
     self.type = type
-    self.layoutModel = KeybouardBuildersDirector().buildKeyboard(for: type)
+    self.layoutModel = KeybouardBuildDirector(spacing: self.spacing).buildKeyboard(for: type)
   }
   
 }
