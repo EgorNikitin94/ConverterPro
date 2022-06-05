@@ -22,6 +22,13 @@ class KeyboardViewModel: ObservableObject {
   init(type: NumSystemType) {
     self.type = type
     self.layoutModel = KeybouardBuildDirector(spacing: self.spacing).buildKeyboard(for: type)
+    
+    $type
+      .sink { type in
+        print("new type = \(type)")
+        self.layoutModel = KeybouardBuildDirector(spacing: self.spacing).buildKeyboard(for: type)
+      }
+      .store(in: &cancellableSet)
   }
   
 }
